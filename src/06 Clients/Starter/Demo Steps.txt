@@ -1,0 +1,64 @@
+Soup To Nuts Final Demo: Steps
+
+Part A: Web API service with Repository and Unit of Work
+
+1. VS project templates: Trackable Entities tooling
+   - Entities wizard: Service and Client entities (separate or shared)
+   - Service.Persistence project: Repo and UoW interfaces
+   - Service.EF project:
+     > Context interface, implementation
+	 > Repo and UoW implementations
+   - WebApi project:
+     > Product and customer controllers: GET
+	 > Order controller: GET, POST, PUT, DELETE
+
+2. Server-side Dependency Injection
+   - App_Start: SimpleInjectorWebApiInitializer
+     > Register context, unit of work and repos
+
+3. Console client
+   - HttpClient.GetAsync
+   - Create order
+   - Updated order
+     > Details: Add, modify, delete
+   - Get changes, update, merge changes
+   - Delete order, confirm delete
+
+Part B: Client
+
+1. Client View Models: Portable Class Library
+   - Service interfaces
+   - Customer Orders View Model:
+     > Events: Communicating with consumer of view model
+	 > Properties: Data binding
+	 > Methods: Load, create, modify, delete
+	   + Fire events, register callbacks
+   - Order View Model Detail:
+     > Begin and end edit: entity clone
+	 > Confirm Save: Create or update
+	 > Cancel Save: Cancel edit (revert)
+
+2. Client Services
+   - HttpClient
+     > Get, Post, Put, Delete
+	 > Json media type formatter: preserve references to handle cycles
+
+3. Client Dependency Injection
+   - View Model Locator
+     > Uses dependency injection: registers service implementations
+	 > App.xaml: Application.Resources
+
+4. Client Views
+   - Customer View
+     > Grid: DataContext
+	 > Load Button: Click event trigger
+	 > Customers Combo: Bindings, SelectionChanged event trigger
+	 > Master grid: orders
+	 > Details grid: order details
+	 > Create, modify, delete buttons:
+	   + View model model starts two-way communication with view
+	   + See view code-behind
+	   + Show OrderDetailView modal dialog
+   - Order detail view
+     > Load products
+	 > Products grid column combo box

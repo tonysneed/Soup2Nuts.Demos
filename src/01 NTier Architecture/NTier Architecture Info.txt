@@ -1,0 +1,27 @@
+Tony Sneed Training Videos on WintellectNOW.com:
+https://www.wintellectnow.com/Home/Instructor?instructorId=TonySneed
+- Topics: LINQ, Entity Framework
+
+Web API 2 Home Page: http://www.asp.net/web-api
+
+Web API 2 Book: Designing Evolvable Web APIs with ASP.NET (O'Reilly)
+http://shop.oreilly.com/product/0636920026617.do
+
+LINQ Intro on MSDN:
+https://msdn.microsoft.com/en-us/library/bb397897.aspx
+
+Entity Framework 6 vs 7:
+http://www.wintellect.com/devcenter/tsneed/when-should-you-make-the-move-to-entity-framework-7
+
+Onion Architecture:
+http://blog.tonysneed.com/2011/10/08/peeling-back-the-onion-architecture
+
+N-Tier Frameworks:
+
+OData: http://www.odata.org
+
+Breeze: http://www.getbreezenow.com
+
+Trackable Entities:
+https://trackable.codeplex.com
+https://github.com/tonysneed/trackable-entities

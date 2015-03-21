@@ -1,0 +1,9 @@
+ASP.NET 5 (vNext):
+Home Page: http://www.asp.net/vnext
+Home GitHub Repo: https://github.com/aspnet/home
+
+ASP.NET Web API 2 (vCurrent):
+Home Page: http://www.asp.net/web-api
+Book: Designing Evolvable Web APIs with ASP.NET (O'Reilly)
+http://shop.oreilly.com/product/0636920026617.do
+
