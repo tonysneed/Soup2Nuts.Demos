@@ -17,6 +17,7 @@ namespace PocoDemo.Web
             // Configure Json and Xml formatters
             config.Formatters.JsonPreserveReferences();
             config.Formatters.XmlPreserveReferences();
+            config.Formatters.ProtobufPreserveReferences();
 
             // Configure ProtoBuf formatter
             var protoFormatter = new ProtoBufFormatter();
